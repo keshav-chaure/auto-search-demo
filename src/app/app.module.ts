@@ -18,12 +18,22 @@ import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { AutoSearchUserComponent } from './share/auto-search-user/auto-search-user.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { ParentOneComponent } from './parent-one/parent-one.component';
+import { ChildOneComponent } from './child-one/child-one.component';
+import { MsgSuperParentComponent } from './msg-super-parent/msg-super-parent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    AutoSearchUserComponent
+    AutoSearchUserComponent,
+    ParentComponent,
+    ChildComponent,
+    ParentOneComponent,
+    ChildOneComponent,
+    MsgSuperParentComponent
   ],
   imports: [
     BrowserModule,

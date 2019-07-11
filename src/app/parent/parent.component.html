@@ -1,0 +1,11 @@
+<div class="box"><p>parent works!</p>
+    
+    <li *ngFor="let u of users">
+        <span>user id {{u.id}} and name is {{u.name}} </span>   
+    </li>
+    <form (ngSubmit)="onSubmit($event)">
+        <input type="text" name="name" />
+        <input type="submit" value="submit"/>
+    </form>     
+<app-child [childMessage]="parentMessage" [childsUserData]="users"></app-child>
+</div>
