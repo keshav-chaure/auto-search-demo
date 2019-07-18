@@ -4,7 +4,13 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-
-<!--<app-nav></app-nav>-->
-<app-auto-search-user></app-auto-search-user>
+<div class="box">
+<nav>
+  <a routerLink="/main">Component Data Sharing</a>
+  <a routerLink="/route-demo">Component Routing</a>  
+  <a routerLink="/admin" routerLinkActive="active">Admin</a>
+</nav>
+</div>
+<div class="box">
 <router-outlet></router-outlet>
+</div>
