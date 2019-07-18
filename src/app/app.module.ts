@@ -23,7 +23,9 @@ import { ChildComponent } from './child/child.component';
 import { ParentOneComponent } from './parent-one/parent-one.component';
 import { ChildOneComponent } from './child-one/child-one.component';
 import { MsgSuperParentComponent } from './msg-super-parent/msg-super-parent.component';
-
+import { RoutingDemoModule } from './routing-demo/routing-demo.module';
+import { MainComponent } from './main/main.component';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,10 +35,12 @@ import { MsgSuperParentComponent } from './msg-super-parent/msg-super-parent.com
     ChildComponent,
     ParentOneComponent,
     ChildOneComponent,
-    MsgSuperParentComponent
+    MsgSuperParentComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
@@ -55,8 +59,10 @@ import { MsgSuperParentComponent } from './msg-super-parent/msg-super-parent.com
     MatFormFieldModule,
     MatButtonModule,
     MatProgressSpinnerModule,
+    RoutingDemoModule,
     HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryDataService, { dataEncapsulation: false, delay: 1000 }),
+      InMemoryDataService, { dataEncapsulation: false, delay: 1000 }
+      ),
   ],
   providers: [AutoSearchUserService],
   bootstrap: [AppComponent]
